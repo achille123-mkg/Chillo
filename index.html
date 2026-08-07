@@ -170,37 +170,34 @@
         </div>
 
         <!-- Section Formulaire de Contact -->
-        <form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Your Name</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" required />
-    <p class="fs-description">
-      This will help me respond to your query via an email.
-    </p>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Message</label>
-    <textarea
-      class="fs-textarea"
-      id="message"
-      name="message"
-      required
-    ></textarea>
-    <p class="fs-description">What would you like to discuss?</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Submit</button>
-  </div>
-</form>
+        <div class="contact-section">
+            <h2 class="section-title" style="margin-bottom: 1rem;">Contactez-nous</h2>
+            
+            <!-- Remplacez VOTRE_FORM_ID par votre ID Formspree (ex: https://formspree.io/f/xknlqwbv) -->
+            <form action="https://formspree.io/f/xwlevpno" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom complet :</label>
+                    <input type="text" id="nom" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" name="_subject" placeholder="Quel est l'objet de votre demande ?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Détaillez votre besoin ici..." required></textarea>
+                </div>
+
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
     </div>
 
     <!-- Pied de page -->
